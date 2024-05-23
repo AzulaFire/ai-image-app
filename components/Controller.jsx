@@ -6,6 +6,8 @@ import { useState } from 'react';
 const Controller = () => {
   const [formData, setFormData] = useState([]);
 
+  const { prompt, quality, style, guidance } = formData;
+
   const getFormData = (data) => {
     setFormData(data);
   };
@@ -14,7 +16,14 @@ const Controller = () => {
     <>
       <Form getFormData={getFormData} />
       <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-        <PhotoGrid formData={formData} />
+        {formData && (
+          <PhotoGrid
+            prompt={prompt}
+            quality={quality}
+            style={style}
+            guidance={guidance}
+          />
+        )}
       </main>
     </>
   );
