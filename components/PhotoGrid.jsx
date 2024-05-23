@@ -19,7 +19,10 @@ const PhotoGrid = ({ formData }) => {
       const generatedImage = await fetchImage(prompt, quality, style, guidance);
       imageData = generatedImage.data;
     };
-    getImages();
+
+    if (photoData.length > 0) {
+      getImages();
+    }
   }, [photoData]);
 
   return (
