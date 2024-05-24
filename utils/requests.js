@@ -1,4 +1,5 @@
-const apiKey = process.env.LIMEWIRE_API || null;
+// const apiKey = process.env.LIMEWIRE_API || null;
+const apiKey = 'lmwr_sk_vWv8elcSJa_JFGfpPZ0Hv2KjFmaOmRB0k7r6gOIgyzkmRtCP';
 
 // Fetch Image based off of text prompt
 
@@ -7,6 +8,7 @@ async function fetchImage(prompt, quality, style, guidance) {
     console.log('API Running');
 
     if (!apiKey) {
+      console.log('Error Key: ' + apiKey);
       return [];
     }
 
@@ -29,9 +31,10 @@ async function fetchImage(prompt, quality, style, guidance) {
     });
 
     if (!resp.ok) {
+      console.log('Response Failed', resp.error);
       throw new Error('Failed to fetch data.');
     }
-    return res.json();
+    return resp.json();
   } catch (error) {
     console.log(Error);
     return [];

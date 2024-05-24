@@ -2,11 +2,12 @@
 import { fetchImage } from '@/utils/requests';
 import Form from '@/components/Form';
 import PhotoGrid from '@/components/PhotoGrid';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import skeleton from '@/assets/images/image-skeleton.jpg';
 
 const Controller = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState([]);
+  const [imageData, setImageData] = useState({
     data: [
       {
         asset_id: '0',
@@ -35,15 +36,22 @@ const Controller = () => {
     setFormData(data);
   };
 
-  const getImages = async () => {
-    const generatedImage = await fetchImage(
-      imageData.prompt,
-      imageData.quality,
-      imageData.style,
-      parseInt(imageData.guidance)
-    );
-    setFormData(generatedImage.data);
-  };
+  useEffect(() => {
+    const getImages = async () => {
+      const generatedImage = await fetchImage(
+        formData.prompt,
+        formData.quality,
+        formData.style,
+        parseInt(formData.guidance) || 50
+      );
+      setImageData(generatedImage.data);
+      console.log('Generated Data' + generatedImage.data);
+    };
+
+    if (formData.prompt) {
+      getImages();
+    }
+  }, [formData]);
 
   return (
     <>
@@ -52,7 +60,7 @@ const Controller = () => {
         <p className='pb-12 text-white lg:text-4xl md:text-3xl sm:text-2xl'>
           Text to Image AI Generator
         </p>
-        <PhotoGrid formData={formData} />
+        <PhotoGrid formData={imageData} />
       </main>
     </>
   );
