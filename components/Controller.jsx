@@ -1,29 +1,58 @@
 'use client';
+import { fetchImage } from '@/utils/requests';
 import Form from '@/components/Form';
 import PhotoGrid from '@/components/PhotoGrid';
 import { useState } from 'react';
+import skeleton from '@/assets/images/image-skeleton.jpg';
 
 const Controller = () => {
-  const [formData, setFormData] = useState([]);
-
-  const { prompt, quality, style, guidance } = formData;
+  const [formData, setFormData] = useState({
+    data: [
+      {
+        asset_id: '0',
+        asset_url: skeleton,
+        type: '',
+      },
+      {
+        asset_id: '1',
+        asset_url: skeleton,
+        type: '',
+      },
+      {
+        asset_id: '2',
+        asset_url: skeleton,
+        type: '',
+      },
+      {
+        asset_id: '3',
+        asset_url: skeleton,
+        type: '',
+      },
+    ],
+  });
 
   const getFormData = (data) => {
     setFormData(data);
   };
 
+  const getImages = async () => {
+    const generatedImage = await fetchImage(
+      imageData.prompt,
+      imageData.quality,
+      imageData.style,
+      parseInt(imageData.guidance)
+    );
+    setFormData(generatedImage.data);
+  };
+
   return (
     <>
       <Form getFormData={getFormData} />
-      <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-        {formData && (
-          <PhotoGrid
-            prompt={prompt}
-            quality={quality}
-            style={style}
-            guidance={guidance}
-          />
-        )}
+      <main className='pt-6 flex min-h-screen flex-col items-center justify-between p-24'>
+        <p className='pb-12 text-white lg:text-4xl md:text-3xl sm:text-2xl'>
+          Text to Image AI Generator
+        </p>
+        <PhotoGrid formData={formData} />
       </main>
     </>
   );

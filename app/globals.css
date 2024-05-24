@@ -7,5 +7,10 @@ body {
 }
 
 .sidebarBg {
-  background-color: #222220;
+  background-color: rgb(38, 50, 71);
+}
+
+img {
+  width: auto;
+  height: auto;
 }

@@ -1,0 +1,43 @@
+{
+  "id": "b0894d32-a2b4-40dc-97ec-e1ac6dee0c2f",
+  "self": "https://api.limewire.com/api/request/b0894d32-a2b4-40dc-97ec-e1ac6dee0c2f",
+  "status": "COMPLETED",
+  "failure_code": null,
+  "failure_reason": null,
+  "credits_used": 3.96,
+  "credits_remaining": 10.0,
+  "data": [
+    {
+      "asset_id": "7baf6d61-f601-48b5-9461-42a5ca9ee9aa",
+      "self": "https://api.limewire.com/api/assets/7baf6d61-f601-48b5-9461-42a5ca9ee9aa",
+      "asset_url": "https://ai-studio-assets.limewire.media/u/45f54665-2bed-4b5b-83f6-be4a96aafd58/image/6f30620b-6f23-41c4-9207-049aff36d396?Expires=1716520930&Signature=GnBp9doiw26GHyYwXAtzqRCneW8Or5vLjOVhQBBkyCVWwf-hgXyjMrYvPLAc1S0WSAw5P-E9KuGV~gMgrguNdrtyfHNTH-T79aS3Wy6OUmz4rDbZ3N0H4xltY1vSgi1XiJhtH9YsxIDWCGJwQfxc9RSnsb7Yx0lsGN3U~3RQ0y4XDqPKNw0gC9nAWGyrvt8Gw3wuhUPvvdmjMRanEqSUeO6QiFXB9~O3aYw44uuFxZ8nS4MrNBujskInTfHAsVBNqMrwqepV2U8-5cRlKlzAk4YE6TEtlIbh3~P4V4Li~Qi9IPOhVFDyb3RwQMkJsrsTrKa2U9G6o6dsCSaBlGvUCg__&Key-Pair-Id=K1U52DHN9E92VT",
+      "type": "image/jpeg",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "asset_id": "9ad77c28-2416-42f4-96e4-fa1b983a8851",
+      "self": "https://api.limewire.com/api/assets/9ad77c28-2416-42f4-96e4-fa1b983a8851",
+      "asset_url": "https://ai-studio-assets.limewire.media/u/45f54665-2bed-4b5b-83f6-be4a96aafd58/image/2776a91b-4a7d-4533-a5ca-33562812401b?Expires=1716520930&Signature=FMFN1TyTdpgdIJxHwoURDPET-0YI4uSHQw29W86swv410L0PP2AY6zpAl9VA9M7bzGoaZ-VZvrFeetjk59JXgY6TEJUIT3TNYOJhh6AhF5~w5pcsHs8OwaI0e-bDAo1eOR39mvewnwCnWk~~hwKW3PXsnOQzl4DBwfCaRdJI-m27P~J9CE-SiF2ej8gXHPZOSJsgNw1lFHADUnkz24X5fnc35LHTEm9lbihJPx121xAcX47t626mD4ay~dbrHrBD07jouR5SYc3sziLyYhrgynLhmwdXLRodEIvCKlFNehh-SX6IyEUfikaivWui1YGXHT92sVKVlqhtrPLr4iUmKw__&Key-Pair-Id=K1U52DHN9E92VT",
+      "type": "image/jpeg",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "asset_id": "6533c30b-6bc4-4af7-80e2-821ef8f7a181",
+      "self": "https://api.limewire.com/api/assets/6533c30b-6bc4-4af7-80e2-821ef8f7a181",
+      "asset_url": "https://ai-studio-assets.limewire.media/u/45f54665-2bed-4b5b-83f6-be4a96aafd58/image/5b16a197-dc91-42f9-bb5b-037b2bd9096c?Expires=1716520930&Signature=BasbCqo~GB447g1C9sgizD0k~MpNtxoVrPU8IhgKAlc1hhPjXfXv79Rqol~g1YQ7AuCEQB0lzVTcYfGOK8ECNHli39KT3880SlczWjJ0xa1KAxyJeb2BXJd~D0RlId1-pec9jfrAQBJHuaUlbE~6hmiV46Vw1BaGBeamCSuLLXZvraX-24iHS8majyFC~CHNKinjRUZA-YBlbzLXKU~H5LWGiZapJREyOdv1cbjhtn2Y-vv2zeiX8ZEqtkFwGaLCnP8s-S3kAVRyg~jPwzm18pwwSJCVHynyuE-UdPD7tmLqbKwDQusL8dL2W4EjLw7PCozWbesEm~OVpjxknlH2Iw__&Key-Pair-Id=K1U52DHN9E92VT",
+      "type": "image/jpeg",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "asset_id": "408e030c-aecc-4fba-9e4b-cb31f8697bba",
+      "self": "https://api.limewire.com/api/assets/408e030c-aecc-4fba-9e4b-cb31f8697bba",
+      "asset_url": "https://ai-studio-assets.limewire.media/u/45f54665-2bed-4b5b-83f6-be4a96aafd58/image/d4816307-05be-4c91-850e-6bff402b6190?Expires=1716520930&Signature=MOyTaY8eQqvmC0dmd9hPmdzhVvoAhTnMmcVXrDxKqEPzHrRd3p-A979-hlssqEOSThGWwCtri6oAdzH-czOeUkJrYi5EOeRvtmQyAzh1QHR0D1nx7kUur38Bzs8y4XVr~J5eqPBRx077AVhj5pFhhqMvsLlLg6ub-Hv0s0-UvP6hQq~Lm3~WNeeWiaUEfCOukxmwzdNHwWkjVDFe7Zsd31iVCd-4SRuwLa0WsduLsaGsxekL5xGDfYzzt1BmyrYMneJtDR8MCcl1hYCGyGu7Yg1K0huK-LrYhc463lHp5h0t6zhl-QCf72aOPladpLsPM6-ZRClPU~puS8wKTyNW6A__&Key-Pair-Id=K1U52DHN9E92VT",
+      "type": "image/jpeg",
+      "width": 1024,
+      "height": 1024
+    }
+  ]
+}
