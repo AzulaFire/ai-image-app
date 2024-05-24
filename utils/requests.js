@@ -1,5 +1,4 @@
-// const apiKey = process.env.LIMEWIRE_API || null;
-const apiKey = 'lmwr_sk_vWv8elcSJa_JFGfpPZ0Hv2KjFmaOmRB0k7r6gOIgyzkmRtCP';
+const apiKey = process.env.LIMEWIRE_API || null;
 
 // Fetch Image based off of text prompt
 
